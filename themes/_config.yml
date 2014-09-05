@@ -1,0 +1,32 @@
+menu:
+  首页/Home: /
+  归档/Archives: /archives
+  关于/About: /about
+
+widgets:
+- search
+- category
+- tag
+- blogroll
+
+excerpt_link: 阅读全文
+
+addthis:
+  enable: false
+  pubid:
+  facebook:
+  twitter:
+  google: true
+  pinterest:
+
+fancybox: true
+
+google_analytics: UA-45991394-1
+
+comment_provider: facebook
+# Facebook comment
+facebook:
+  appid: 123456789012345
+  comment_count: 5
+  comment_width: 840
+  comment_colorscheme: light
