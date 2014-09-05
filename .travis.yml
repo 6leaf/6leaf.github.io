@@ -8,16 +8,10 @@ before_install:
   - npm install -g hexo
 install:
   - npm install
-before_script:
-  - mkdir .deploy
-  - git clone $REPO .deploy
 script:
-  - cd  .deploy
   - hexo generate
 after_success:
-  - rm -r .deploy/*
-  - cp -r public/* .deploy
-  - cd .deploy
+  - cd ./public
   - git config --global push.default simple
   - git config --global user.name '6leaf'
   - git config --global user.email luzky12@gmail.com
