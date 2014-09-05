@@ -1,0 +1,22 @@
+branches:
+  only:
+    - source
+language: node_js
+node_js:
+  - "0.10"
+script:
+  - "hexo generate"
+after_success:
+  - "git clone $REPO git_deploy"
+  - "rm -r git_deploy/*"
+  - "cp -r public/* git_deploy"
+  - "cd git_deploy"
+  - "git config --global push.default simple"
+  - "git config --global user.name '6leaf'"
+  - "git config --global user.email luzky12@gmail.com"
+  - "git add -A"
+  - "git commit -m 'update'"
+  - "git push -q"
+env:
+  global:
+    secure: G2tvJ/02ZnEyDgyJXci2HlNTzdtm9xo3r3X+edHo3y99ypMqz91noknLxUGpA1zA2qiQdQT3LONBnz2qOv0tK7lTWOt9h+2flj7khGR2byF18ylLxMsr0O9d/oJouCp/9aDrcT/irQqbb9HnwEy9stN1yZLfWw8a9oZXewSRwek=
