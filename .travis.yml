@@ -4,8 +4,12 @@ branches:
 language: node_js
 node_js:
   - "0.10"
+before_install:
+  - npm install -g hexo
+install:
+  - npm install
 script:
-  - "hexo generate"
+  - hexo generate
 after_success:
   - "git clone $REPO git_deploy"
   - "rm -r git_deploy/*"
