@@ -1,4 +1,4 @@
-title: hexo+github静态博客搭建
+﻿title: hexo+github静态博客搭建
 date: 2014-09-05 09:59:29
 tags: [hexo,nodejs,blog,github]
 ---
