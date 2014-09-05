@@ -17,7 +17,7 @@ after_success:
   - git config --global user.name '6leaf'
   - git config --global user.email luzky12@gmail.com
   - git add -A
-  - git commit -m 'update'
+  - git commit -a -m 'update'
   - git push origin master -q
 env:
   global:
