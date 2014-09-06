@@ -17,6 +17,10 @@ tags: [github,travis]
 ```
 按照提示输入用户命名和密码就可以了。
 
+
+<!--more-->
+
+
 ## travis自动化提交
 使用github的账号登陆travis即可以同步所有的代码库目录，然后就可以开启持续集成CI。关键一步是配置文件.travis.yml。
 
