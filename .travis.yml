@@ -11,20 +11,14 @@ install:
 script:
   - hexo generate
 after_success:
-  - mkdir .deploy
-  - echo $REPO
-  - git clone $REPO .deploy
-  - ls -la
-  - cd .deploy
   - ls -la
   - git config --global push.default simple
   - git config --global user.name '6leaf'
   - git config --global user.email luzky12@gmail.com
   - git add -A
   - git commit -m 'update'
-  - git push
-  - git checkout master
+  - git push https://$GH_NAME:$GH_TOKEN@github.com/$GH_NAME/6leaf.github.io.git
   
 env:
   global:
-    secure: G2tvJ/02ZnEyDgyJXci2HlNTzdtm9xo3r3X+edHo3y99ypMqz91noknLxUGpA1zA2qiQdQT3LONBnz2qOv0tK7lTWOt9h+2flj7khGR2byF18ylLxMsr0O9d/oJouCp/9aDrcT/irQqbb9HnwEy9stN1yZLfWw8a9oZXewSRwek=
+    secure: M4D6MYqCS7fJa4sD/owiCJKojHGsOmNYdfnGyKgzCEiajqjmcGk4TbW8TNojF5YIjNktVg2qrJqzhq3SmPQ16ris+BlAfulS80wA8JYKZ/FhMoMCXi/fNrU1X5YiiUvpCpswbpJh5GfLHLM6izjUWgwMHFjQpifDgwZ/j47Is88=
