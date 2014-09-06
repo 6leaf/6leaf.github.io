@@ -1,6 +1,7 @@
 branches:
   only:
     - source
+    - master
 language: node_js
 node_js:
   - "0.10"
