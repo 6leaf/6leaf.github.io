@@ -17,7 +17,7 @@ after_success:
   - git config --global user.email luzky12@gmail.com
   - git add -A
   - git commit -m 'update'
-  - git push https://$GH_NAME:$GH_TOKEN@github.com/$GH_NAME/6leaf.github.io.git HEAD:master
+  - git push https://$GIT_NAME:$GH_TOKEN@github.com/$GIT_NAME/6leaf.github.io.git HEAD:master
   
 env:
   global:
