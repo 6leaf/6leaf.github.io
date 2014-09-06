@@ -8,7 +8,6 @@ tags: [github,travis]
 
 # github提交
 ## 手工提交
-![测试](images/test.jpg)
 使用常用的git命令
 ```
     git clone
