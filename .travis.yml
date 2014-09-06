@@ -6,12 +6,16 @@ node_js:
   - "0.10"
 before_install:
   - npm install -g hexo
+  - git clone https://$GIT_NAME:$GH_TOKEN@github.com/$GIT_NAME/6leaf.github.io.git --branch=source source
+  - git clone https://$GIT_NAME:$GH_TOKEN@github.com/$GIT_NAME/6leaf.github.io.git --branch=master master
+  - cd .source
 install:
   - npm install
 script:
   - hexo generate
 after_success:
   - ls -la
+  - cp -r public/* ../master
   - git config --global push.default simple
   - git config --global user.name '6leaf'
   - git config --global user.email luzky12@gmail.com
