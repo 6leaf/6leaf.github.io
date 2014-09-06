@@ -16,7 +16,8 @@ script:
 after_success:
   - ls -la
   - cp -r public/* ../branch_master
-  - cd branch_master
+  - cd ../branch_master
+  - ls -la
   - git config --global push.default simple
   - git config --global user.name '6leaf'
   - git config --global user.email luzky12@gmail.com
