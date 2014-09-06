@@ -8,7 +8,7 @@ before_install:
   - npm install -g hexo
   - git clone https://$GIT_NAME:$GH_TOKEN@github.com/$GIT_NAME/6leaf.github.io.git --branch=source source
   - git clone https://$GIT_NAME:$GH_TOKEN@github.com/$GIT_NAME/6leaf.github.io.git --branch=master master
-  - cd .source
+  - cd source
 install:
   - npm install
 script:
