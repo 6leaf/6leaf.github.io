@@ -1,6 +1,7 @@
 branches:
   only:
     - source
+    - master
 language: node_js
 node_js:
   - "0.10"
@@ -8,10 +9,6 @@ before_install:
   - npm install -g hexo
 install:
   - npm install
-before_script:
-  - git config --global user.name '6leaf'
-  - git config --global user.email 'luzky12@gmail.com'
-  - git clone git://github.com/winterland1989/hexo-theme-winterland.git themes/winterland
 script:
   - hexo generate
 after_success:
