@@ -12,6 +12,7 @@ script:
   - hexo generate
 after_success:
   - mkdir .deploy
+  - echo $REPO
   - git clone $REPO .deploy
   - ls -la
   - cd .deploy
