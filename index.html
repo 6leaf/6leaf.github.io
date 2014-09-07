@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://love.hackerzhou.me/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Love</title>
+	
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('/static/font/digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link type="image/x-icon" href="/static/images/favicon.ico" rel=icon>
+	<link type="text/css" href="/static/css/default.css" rel="stylesheet">
+	<script type="text/javascript" src="/static/js/jquery.js"></script>
+	<script type="text/javascript" src="/static/js/garden.js"></script>
+    <script type="text/javascript" src="/static/js/functions.js"></script>
+     <script type="text/javascript" src="/static/js/heart.js"></script>
+</head>
+
+<body style="">
+		<div id="content">
+			<div id="paint">
+				<div id="words">
+					<span class="string">也许前世的五百次回眸,</span><br/>
+					<span class="string">才换得今生与你的擦肩而过;</span><br/>
+					<span class="string">这年灯火阑珊,我们在时间之内相遇;</span><br/>
+					<span class="string">这年春光正好,我们在记忆之外相知;</span><br/>
+					<span class="string">这一年我们手拉着手,<span class="string"><br/>
+					<span class="string">走过了那一季草长莺飞四月天,</span></br>
+					<span class="string">走过了那一季拂堤杨柳醉春烟;</span></br>
+					<span class="string">遇到你,</span><br/>
+					<span class="string">是我最美好的幸福,</span><br/>
+					<span class="string">你若安好,便是晴天......</span>
+				</div>
+				<canvas id="garden"></canvas>
+
+				
+				<div id="elapseClock">
+					<span class="digit">1011</span> days 
+					<span class="digit">18</span> hours 
+					<span class="digit">57</span> minutes 
+					<span class="digit">40</span> seconds
+				</div>
+			</div>
+
+			<div id="copyright">
+				Inspired by <a href="http://hackerzhou.me/">hackerzhou.me</a> project.<br>
+				Copyright © 2013 <a href="http://love.6leaf.com/">6leaf.com</a> 2011-2013
+			</div>
+		</div>
+		
+		
+
+	<script type="text/javascript">
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} 
+	</script>
+
+
+</body>
+</html>
