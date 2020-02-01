@@ -1,5 +1,11 @@
 ---
-title: {{ title }}
-date: {{ date }}
-tags:
----
+title: {{ title }} 
+date: {{ date }} 
+categories:  
+tags: [] 
+urlname: 
+--- 
+# 引言
+
+<!-- more -->
+# 后记
