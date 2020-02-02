@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>串口和并口磁盘</title>
+      <link href="/2020/02/02/index/"/>
+      <url>/2020/02/02/index/</url>
+      
+        <content type="html"><![CDATA[<hr><p>title: 串口和并口磁盘<br>date: 2020-02-02 12:04:20<br>categories:<br>tags: [科普]<br>urlname: sata-pata-diff</p><hr><h1 id="并口和串口"><a href="#并口和串口" class="headerlink" title="并口和串口"></a>并口和串口</h1><p>串口硬盘和并口硬盘主要的区别在于硬盘于主板通信的方式不一样，物理接口不一样。</p><a id="more"></a><p>SATA硬盘，也就是一般所说的串口硬盘，使用的是高频率的串行通信方式，其典型的接口外观如下图：<br><img src="/.fun//20200202120822569.png" alt></p><p>PATAIDE硬盘，或称IDE硬盘，并口硬盘，使用的是多条信号线并行通信方式，其典型的接口外观如下图：<br><img src="/.fun//20200202122339749.png" alt></p><h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>为什么要写blog</title>
       <link href="/2020/02/01/why-need-blog/"/>
       <url>/2020/02/01/why-need-blog/</url>
