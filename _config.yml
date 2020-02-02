@@ -8,7 +8,7 @@ subtitle: '最美好的未来，往往要经过最漫长的等待'
 description: '最美好的未来，往往要经过最漫长的等待'
 keywords:
 author: 6leaf
-language: zh
+language: zh-CN
 timezone: ''
 
 # URL
@@ -115,9 +115,9 @@ live2d:
   model:
     use: live2d-widget-model-wanko
   display:
-    position: right
-    width: 100
-    height: 200
+    position: left
+    width: 150
+    height: 300
   mobile:
     show: true
   react:
